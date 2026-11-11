@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ABDULLAH'S TRUSTED BAZAAR</title>
+<style>
+:root{--green:#087f5b;--deep:#064e3b;--gold:#d9a441;--bg:#f4f8f6}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;background:var(--bg);color:#172b25}
+header{background:linear-gradient(110deg,var(--deep),var(--green));color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:20px}.tag{font-size:12px;color:#ffe6a8;margin-top:5px}
+nav a{color:white;text-decoration:none;margin:0 8px;font-size:14px}
+.hero{margin:22px auto;max-width:1100px;padding:32px 6%;border-radius:20px;background:linear-gradient(120deg,#064e3b,#0b8f68 60%,#d9a441);color:white}
+.hero h1{font-size:clamp(27px,5vw,48px);margin:0 0 12px}.hero p{max-width:600px;line-height:1.7}
+.wrap{max-width:1100px;margin:22px auto;padding:0 16px}.tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+input,select,button{font:inherit;padding:12px;border:1px solid #d2ddd7;border-radius:10px}input{flex:1;min-width:190px}
+button{background:var(--green);color:white;border:0;cursor:pointer}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:white;border:1px solid #e2ebe6;border-radius:15px;overflow:hidden;box-shadow:0 5px 18px #153b2810}
+.card img{width:100%;height:155px;object-fit:cover;background:#e8f0ec}.info{padding:13px}.price{font-weight:bold;color:var(--green);margin:8px 0}
+.panel{background:white;border:1px solid #e2ebe6;border-radius:15px;padding:18px;margin:18px 0}
+.small{font-size:13px;color:#52645c;line-height:1.6}footer{text-align:center;background:#073d30;color:#dceee6;padding:25px;margin-top:35px}
+</style>
+</head>
+<body>
+<header><div><div class="brand">ABDULLAH'S TRUSTED BAZAAR</div><div class="tag">বিশ্বস্ত কেনাকাটার ঠিকানা</div></div><nav><a href="#products">পণ্য</a><a href="#order">অর্ডার</a><a href="#about">আমাদের সম্পর্কে</a></nav></header>
+<section class="hero"><h1>বিশ্বস্ত কেনাকাটা, সহজ ডেলিভারি</h1><p>ফ্যাশন, ইলেকট্রনিক্স ও দৈনন্দিন প্রয়োজনীয় পণ্যের একটি অনলাইন বাজার। এটি একটি Demo ওয়েবসাইট—এখানে এখনো বাস্তব অর্ডার বা পেমেন্ট চালু নেই।</p><a href="#products"><button>পণ্য দেখুন</button></a></section>
+<main class="wrap">
+<h2 id="products">জনপ্রিয় পণ্য</h2><div class="tools"><input id="search" placeholder="পণ্যের নাম লিখে খুঁজুন…"><select id="category"><option value="সব">সব ক্যাটাগরি</option><option>ফ্যাশন</option><option>ইলেকট্রনিক্স</option><option>লাইফস্টাইল</option></select></div>
+<div class="grid" id="grid"></div>
+<section class="panel" id="order"><h2>ডেমো অর্ডার</h2><p class="small">নিচের অপশনগুলো শুধু নমুনা। কোনো অর্ডার বা টাকা গ্রহণ করা হবে না। বাস্তব পেমেন্ট ও কুরিয়ার চালু করতে অনুমোদিত সেবা ও সার্ভার সংযোগ প্রয়োজন।</p>
+<div class="tools"><select><option>পেমেন্ট: Cash on Delivery (COD)</option><option>পেমেন্ট: Online (Demo only)</option></select><select><option>কুরিয়ার নির্বাচন</option><option>Steadfast (Demo)</option><option>Pathao (Demo)</option><option>REDX (Demo)</option><option>eCourier (Demo)</option><option>নিজস্ব ডেলিভারি</option></select></div><button onclick="alert('এটি Demo মাত্র। বাস্তব অর্ডার এখনো চালু হয়নি।')">ডেমো অর্ডার দিন</button></section>
+<section class="panel" id="about"><h2>আমাদের সম্পর্কে</h2><p class="small">ABDULLAH'S TRUSTED BAZAAR — একটি মাল্টি-ভেন্ডর ই-কমার্স Demo প্রকল্প। Admin approval, seller dashboard, affiliate commission, database ও নিরাপদ checkout পরবর্তী ধাপে যুক্ত হবে।</p></section>
+</main><footer>© ABDULLAH'S TRUSTED BAZAAR · Demo Version</footer>
+<script>
+const items=[
+["স্মার্ট ওয়াচ","ইলেকট্রনিক্স","৳১,২৫০","https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"],
+["হেডফোন","ইলেকট্রনিক্স","৳৯৫০","https://images.unsplash.com/photo-1504150558240-0ef6c7f9f2d7?w=600"],
+["ব্যাকপ্যাক","ফ্যাশন","৳৮৫০","https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600"],
+["সানগ্লাস","ফ্যাশন","৳৪৫০","https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600"],
+["ল্যাম্প","লাইফস্টাইল","৳৭৫০","https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600"],
+["ক্যামেরা","ইলেকট্রনিক্স","৳৫,৫০০","https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=600"],
+["জুতা","ফ্যাশন","৳১,৪৫০","https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"],
+["কফি মগ","লাইফস্টাইল","৳৩৫০","https://images.unsplash.com/photo-1514228742587-6b1558f0"]
+];
+const grid=document.getElementById('grid');
+function render(){let q=document.getElementById('search').value.toLowerCase(),c=document.getElementById('category').value;grid.innerHTML='';items.filter(x=>(c==='সব'||x[1]===c)&&x[0].toLowerCase().includes(q)).forEach(x=>{let d=document.createElement('article');d.className='card';d.innerHTML=`<img src="${x[3]}" alt="${x[0]}" onerror="this.style.display='none'"><div class="info"><b>${x[0]}</b><div class="small">${x[1]}</div><div class="price">${x[2]}</div><button onclick="alert('এটি শুধু Demo পণ্য।')">বিস্তারিত দেখুন</button></div>`;grid.appendChild(d)})}
+document.getElementById('search').addEventListener('input',render);document.getElementById('category').addEventListener('change',render);render();
+</script></body></html>
