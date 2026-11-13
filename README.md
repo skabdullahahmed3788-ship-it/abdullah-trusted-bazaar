@@ -1,2 +1,3 @@
-# abdullah-trusted-bazaar
-ABDULLAH'S TRUSTED BAZAAR 
+# ABDULLAH'S TRUSTED BAZAAR
+
+abdullah-trusted-bazaar
